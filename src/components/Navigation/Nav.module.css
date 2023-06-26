@@ -27,10 +27,11 @@
 
 .Link {
     text-transform: capitalize;
-    text-decoration: none;
     color: #FF6060;
+    text-decoration: none;
 }
 
-.Link:active{
+.Link.active {
     text-decoration: underline;
 }
+
