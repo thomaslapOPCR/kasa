@@ -18,7 +18,7 @@ export const TitleProvider = ({ children }) => {
 
 export const useTitle = () => useContext(TitleContext);
 
-export const getPageName = (pathname) => {
-  const pathSegments = pathname.split("/").filter((segment) => segment !== "");
-  return pathSegments.length > 0 ? pathSegments[0] : "Home";
+export const getPageName = (url) => {
+  const name = url.split("/").filter((item) => item !== "");
+  return name.length > 0 ? name[0] : "Home";
 };
