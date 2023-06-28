@@ -4,10 +4,12 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .Container {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     background: #F6F6F6;
     height: 100%;

@@ -1,0 +1,68 @@
+.DropdownBase {
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 100;
+    cursor: pointer;
+    background: var(--primary-color);
+    height: 100%;
+}
+
+.DropdownHeader {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background: var(--primary-color);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.title {
+    color: #fff;
+}
+
+.wrapper {
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    background: #f6f6f6;
+    width: 100%;
+    bottom: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.DropdownBase.open .DropdownHeader {
+    background: var(--primary-color);
+}
+
+.DropdownBase.open .wrapper {
+    opacity: 1;
+}
+
+.DropdownBase.open .wrapper ul,
+.DropdownBase.open .wrapper p {
+    opacity: 1;
+    animation: none;
+}
