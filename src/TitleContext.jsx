@@ -6,8 +6,8 @@ export const TitleProvider = ({ children }) => {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
-    document.title = title;
-  }, [title]);
+    document.title = title; //Actions
+  }, [title]);// dependance
 
   return (
     <TitleContext.Provider value={setTitle}>
@@ -20,5 +20,9 @@ export const useTitle = () => useContext(TitleContext);
 
 export const getPageName = (url) => {
   const name = url.split("/").filter((item) => item !== "");
-  return name.length > 0 ? name[0] : "Home";
+  if(name.length > 0 ) {
+    return name[0];
+  } else {
+    return "Home";
+  }
 };

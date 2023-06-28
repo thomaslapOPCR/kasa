@@ -1,0 +1,24 @@
+*, :before , :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.BaseLayout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure une hauteur minimale de 100% de la fenêtre */
+}
+
+header {
+
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+
+}

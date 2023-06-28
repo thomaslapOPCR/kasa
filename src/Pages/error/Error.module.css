@@ -1,0 +1,28 @@
+@import "../../index.css";
+
+.Error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    gap: 20px;
+    height: max-content;
+}
+
+.Code {
+    font-size: 288px;
+}
+
+.Message {
+    font-weight: 500;
+    margin: -30px 0 30px 0;
+}
+
+.NavLink {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration-line: underline;
+}

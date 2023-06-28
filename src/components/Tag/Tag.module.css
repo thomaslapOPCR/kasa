@@ -1,0 +1,11 @@
+.TagContainer {
+    width: 100px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+}
+
+.TagText {
+    color: white;
+    text-align: center;
+}

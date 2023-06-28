@@ -1,11 +1,12 @@
-
+import React from "react";
+import Banner from "../../components/Banner/Banner.jsx";
+import Image from "../../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png";
 
 function About() {
 
 
   return (
-  // eslint-disable-next-line react/react-in-jsx-scope
-    <h1>about</h1>
+    <Banner imageSrc={Image}/>
         
   )
 }

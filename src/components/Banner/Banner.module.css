@@ -1,0 +1,62 @@
+.Container {
+    width: 75%;
+    height: 30vh;
+    border-radius: 25px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode:darken;
+    background: black;
+    opacity: .3;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%;
+}
+
+.Text {
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    font-size: 24px;
+    width: 80%;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 500px) {
+
+    .Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    .Image {
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+
+    .Text {
+        position: absolute;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        font-size: 45px;
+        width: 100%;
+    }
+}
