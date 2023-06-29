@@ -1,14 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
 import {NavLink} from "react-router-dom";
 import styles from "./Error.module.css";
-import {useTitle} from "../../TitleContext.jsx";
 
 function Error() {
-  const setTitle = useTitle();
-
-  useEffect(() => {
-    setTitle("error");
-  }, [location, setTitle]);
 
 
   return (

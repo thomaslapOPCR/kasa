@@ -1,4 +1,11 @@
-
+•	index.jsx doit contenir App
+•	mettre le routing dans App.jsx
+•	Renommer view en pages
+•	Créer un BaseLayout.jsx en utilisant Outlet dans la doc react-router
+•	Favicon
+•	Titre dynamique pour chaque page
+•	Page accueil
+o	navigation
+	voir NavLink et mettre en place les actives
 	créer les composants
 •	continuer les autres pages
-

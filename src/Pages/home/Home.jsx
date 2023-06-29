@@ -6,15 +6,7 @@ import data from "../../data/logement.json"
 import Card from "../../components/Card/Card.jsx";
 
 function Home() {
-
-  const Cards = data.map(({id,title,cover},index) => (
-    <Card
-      key={index}
-      id={id}
-      title={title}
-      cover={cover}
-    />
-  ));
+  document.title = "home";
 
   return (
     <div className={style.global__container}>
@@ -23,7 +15,15 @@ function Home() {
         title="Chez vous, partout et ailleurs"
       />
       <div className={style.Container}>
-        {Cards}
+        {   data.map(({id,title,cover},index) => (
+          <Card
+            key={index}
+            id={id}
+            title={title}
+            cover={cover}
+          />
+        ))
+        }
       </div>
     </div>
   );

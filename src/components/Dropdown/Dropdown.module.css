@@ -1,68 +1,62 @@
-.DropdownBase {
-    position: relative;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 100;
-    cursor: pointer;
-    background: var(--primary-color);
-    height: 100%;
-}
 
-.DropdownHeader {
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    background: var(--primary-color);
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.title {
-    color: #fff;
-}
-
-.wrapper {
+.dropbtn {
     position: absolute;
-    border-radius: 0 0 5px 5px;
-    background: #f6f6f6;
-    width: 100%;
-    bottom: 0;
-    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+}
+
+
+.dropdowncontent {
+    display: block;
+    background-color: #f1f1f1;
+    z-index: 1;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    transition: top .5s,opacity.2s;
     opacity: 0;
-    animation: slideDown 0.3s ease forwards;
 }
 
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.DropdownBase.open .DropdownHeader {
-    background: var(--primary-color);
-}
-
-.DropdownBase.open .wrapper {
+.dropdowncontent.isOpen {
+    position: absolute;
+    top: 60px;
     opacity: 1;
+    transition: opacity .2s , top .2s;
 }
 
-.DropdownBase.open .wrapper ul,
-.DropdownBase.open .wrapper p {
-    opacity: 1;
-    animation: none;
+/* .dropdowncontent[data-open="true"] p  { */
+/*     visibility: visible; */
+/* } */
+
+/* .dropdowncontent[data-open="false"] p  { */
+/*     visibility: hidden; */
+/* } */
+
+.rotate {
+    transform: rotate(180deg);
+    transition: transform .4s;
+}
+
+.noRotate
+{
+    transform: rotate(0deg);
+    transition: transform .4s;
 }

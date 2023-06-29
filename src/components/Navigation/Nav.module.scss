@@ -27,9 +27,12 @@
     text-transform: capitalize;
     color: #FF6060;
     text-decoration: none;
+
 }
 
-.Link.active {
+.active {
+    text-transform: capitalize;
+    color: #FF6060;
     text-decoration: underline;
 }
 

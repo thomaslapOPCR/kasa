@@ -6,7 +6,7 @@ export const TitleProvider = ({ children }) => {
   const [title, setTitle] = useState("");
 
   useEffect(() => {
-    document.title = title; //Actions
+
   }, [title]);// dependance
 
   return (
