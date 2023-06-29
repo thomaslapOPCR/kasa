@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import styles from "./Error.module.css";
 
 function Error() {
-
+  document.title = "Erreur";
 
   return (
     <div className={styles.Error}>

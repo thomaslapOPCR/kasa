@@ -5,3 +5,12 @@
     flex-direction: column;
     gap: 30px;
 }
+
+.DropdownContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 75%;
+    margin: 0 auto;
+    height: 60vh;
+}

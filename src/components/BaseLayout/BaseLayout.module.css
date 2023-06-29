@@ -8,7 +8,8 @@
 .BaseLayout {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assure une hauteur minimale de 100% de la fenêtre */
+    min-height: 100vh;
+    height: auto;
 }
 
 header {
@@ -16,9 +17,9 @@ header {
 }
 
 main {
-    flex: 1;
+    flex: 1 1;
 }
 
 footer {
-
+    margin-top: 10vh;
 }

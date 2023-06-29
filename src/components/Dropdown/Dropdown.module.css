@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--primary-color);
     color: white;
     padding: 16px;
@@ -20,8 +20,15 @@
     position: relative;
     display: inline-block;
     z-index: 20;
+    margin: 10px 10px 0 10px;
+    transition: margin-bottom .4s
 }
 
+.dropdown.isOpen {
+    z-index: 10000;
+    margin-bottom: 60px;
+    transition: margin-bottom .4s
+}
 
 .dropdowncontent {
     display: block;
@@ -37,18 +44,25 @@
 
 .dropdowncontent.isOpen {
     position: absolute;
-    top: 60px;
+    top: 40px;
     opacity: 1;
+    height: max-content;
     transition: opacity .2s , top .2s;
 }
 
-/* .dropdowncontent[data-open="true"] p  { */
-/*     visibility: visible; */
-/* } */
+.dropdowncontent p {
+    padding-top: 10px;
+}
 
-/* .dropdowncontent[data-open="false"] p  { */
-/*     visibility: hidden; */
-/* } */
+.dropdown h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dropdown svg {
+    width: 20px;
+}
+
 
 .rotate {
     transform: rotate(180deg);

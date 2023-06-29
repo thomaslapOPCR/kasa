@@ -6,7 +6,7 @@ import data from "../../data/logement.json"
 import Card from "../../components/Card/Card.jsx";
 
 function Home() {
-  document.title = "home";
+  document.title = "Home";
 
   return (
     <div className={style.global__container}>
