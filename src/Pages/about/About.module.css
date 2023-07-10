@@ -11,5 +11,16 @@
     flex-direction: column;
     width: 75%;
     margin: 0 auto;
-    height: 60vh;
+    gap: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .Container,.DropdownContainer {
+        width: 98%;
+    }
+
+    .Container > div {
+        width: 98%;
+        height: 223px;
+    }
 }

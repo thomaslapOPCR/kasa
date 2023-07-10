@@ -1,6 +1,8 @@
 .content {
     width: 340px;
     height: 340px;
+    /* min-width: 340px; */
+    /* max-width: 340px; */
     overflow: hidden;
     border-radius: 10px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
@@ -39,3 +41,5 @@
     text-shadow: 0 0 2px #373737;
     font-weight: 500;
 }
+
+

@@ -13,6 +13,7 @@
     cursor: pointer;
     width: 100%;
     z-index: 10;
+
 }
 
 
@@ -21,18 +22,16 @@
     display: inline-block;
     z-index: 20;
     margin: 10px 10px 0 10px;
-    transition: margin-bottom .4s
 }
 
 .dropdown.isOpen {
     z-index: 10000;
-    margin-bottom: 60px;
-    transition: margin-bottom .4s;
+    margin-bottom: -45px;
     height: max-content;
 }
 
 .dropdowncontent {
-    display: block;
+    display: none;
     background-color: #f1f1f1;
     z-index: 1;
     border-radius: 10px;
@@ -43,6 +42,7 @@
 }
 
 .dropdowncontent.isOpen {
+    display: block;
     opacity: 1;
     height: max-content;
     transition: opacity .2s ;

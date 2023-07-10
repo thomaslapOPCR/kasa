@@ -20,5 +20,21 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width: 1700px) {
+    .Container {
+        justify-content: center;
+    }
 
+}
 
+@media screen and (max-width: 500px) {
+
+    .global__container {
+        width: 98%;
+    }
+
+    .Container {
+        padding: 0;
+    }
+
+}
