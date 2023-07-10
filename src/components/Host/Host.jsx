@@ -1,14 +1,14 @@
 import React from "react";
+import style from "./Host.module.css";
 
 const Host = (data) => {
-  console.log(data)
   return (
-    <div>
-      <div>
-        <p>{data.name.split(" ")[0]} <br/> {data.name.split(" ")[1]}</p>
-
+    <div className={style.hostContainer}>
+      <div className={style.name}>
+        <p>
+          {data.data.name.split(" ")[0]} <br/> {data.data.name.split(" ")[1]}</p>
       </div>
-      <img src={data.picture} alt=""/>
+      <img className={style.picture} src={data.data.picture} alt={data.data.name}/>
     </div>
   );
 };

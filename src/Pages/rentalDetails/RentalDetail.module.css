@@ -1,0 +1,27 @@
+
+.tagContainer {
+    display: flex;
+     gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.info {
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdownContainer {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.dropdownContainer > div {
+    width: 100%;
+}

@@ -27,7 +27,8 @@
 .dropdown.isOpen {
     z-index: 10000;
     margin-bottom: 60px;
-    transition: margin-bottom .4s
+    transition: margin-bottom .4s;
+    height: max-content;
 }
 
 .dropdowncontent {
@@ -35,22 +36,22 @@
     background-color: #f1f1f1;
     z-index: 1;
     border-radius: 10px;
-    position: absolute;
-    top: 0;
-    padding: 15px;
-    transition: top .5s,opacity.2s;
+    padding: 45px 15px 15px 15px;
+    transition: opacity.2s;
     opacity: 0;
+    width: 100%;
 }
 
 .dropdowncontent.isOpen {
-    position: absolute;
-    top: 40px;
     opacity: 1;
     height: max-content;
-    transition: opacity .2s , top .2s;
+    transition: opacity .2s ;
 }
 
 .dropdowncontent p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding-top: 10px;
 }
 

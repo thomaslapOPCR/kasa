@@ -5,7 +5,8 @@ import Carousel from "../../components/Carousel/Carousel.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import Host from "../../components/Host/Host.jsx";
 import Popularity from "../../components/Popularity/Popularity.jsx";
-
+import Dropdown from "../../components/Dropdown/Dropdown.jsx";
+import style from "./RentalDetail.module.css";
 
 
 function RentalDetails() {
@@ -23,24 +24,33 @@ function RentalDetails() {
         }
       </section>
 
-      <section id="info">
+      <section className={style.info}>
         <article>
           <h2>{logementData.title}</h2>
           <p>{logementData.location}</p>
-          {
-            logementData.tags.map((item , index)=>(
-              <Tag key={index} data={item}/>
-            ))
-          }
+          <div className={style.tagContainer}>
+            {
+              logementData.tags.map((item , index)=>(
+                <Tag key={index} data={item}/>
+              ))
+            }
+          </div>
         </article>
         <article>
           <Host data={logementData.host}/>
-          <Popularity  data={logementData.rating}/>
+          <Popularity rating={logementData.rating}/>
         </article>
       </section>
 
-      <section id="dropdownContainer">
-
+      <section className={style.dropdownContainer}>
+        <Dropdown
+          title={"Description"}
+          message={logementData.description}
+        />
+        <Dropdown
+          title={"Equipments"}
+          message={logementData.equipments}
+        />
       </section>
     </section>        
   )

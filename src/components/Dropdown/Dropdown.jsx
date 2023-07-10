@@ -16,7 +16,7 @@ const Dropdown = ({ title, message }) => {
         <Chevron className={isOpen ? styles.rotate : styles.noRotate} />
       </button>
       <div  className={`${styles.dropdowncontent} ${isOpen ? styles.isOpen : ""}`}>
-        <p>{message}</p>
+        <p>{Array.isArray(message)? message.map((item,index)=><span key={index}>{item}</span>):message}</p>
       </div>
     </div>
   );
