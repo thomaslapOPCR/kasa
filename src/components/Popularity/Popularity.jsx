@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as Stars } from "./star-fill.svg";
+import PropTypes from "prop-types";
 
 const Popularity = ({ rating }) => {
   const filledStars = parseInt(rating)
@@ -12,6 +13,10 @@ const Popularity = ({ rating }) => {
       ))}
     </div>
   );
+};
+
+Popularity.propTypes = {
+  rating: PropTypes.string.isRequired,
 };
 
 export default Popularity;

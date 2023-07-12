@@ -1,6 +1,6 @@
 import React from "react";
 import logements from "../../data/logement.json";
-import { useParams } from "react-router-dom";
+import { useParams  } from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import Host from "../../components/Host/Host.jsx";
@@ -10,10 +10,16 @@ import style from "./RentalDetail.module.css";
 
 
 function RentalDetails() {
-  document.title = "Logements";
+
+
   let logementId = useParams();
   const logementData = logements.filter(logement=> logement.id === logementId.id)[0];
+  
+  if (logementData === undefined) {
+    location.href = "/error"
+  }
 
+  document.title = logementData.title;
   return(
     <section>
       <section id="carousel">

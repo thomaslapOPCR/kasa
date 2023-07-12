@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Host.module.css";
+import PropTypes from "prop-types";
 
 const Host = (data) => {
   return (
@@ -11,6 +12,13 @@ const Host = (data) => {
       <img className={style.picture} src={data.data.picture} alt={data.data.name}/>
     </div>
   );
+};
+
+Host.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Host;
