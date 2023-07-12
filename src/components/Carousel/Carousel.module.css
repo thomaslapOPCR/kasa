@@ -34,9 +34,6 @@
     right: 20px;
 }
 
-.svg {
-    color: #fff;
-}
 
 .counter {
     position: absolute;
@@ -44,4 +41,34 @@
     left: 50%;
     transform: translateX(-50%);
     color: white;
+}
+
+@media screen and (max-width: 492px) {
+    .slide {
+        height: 370px;
+
+    }
+
+    .carousel {
+        width: 95%;
+    }
+    .counter {
+        display: none;
+    }
+
+    .chevron {
+        width: 30px;
+        height: 30px;
+    }
+
+    .left {
+        left: 10px;
+
+    }
+
+    .right {
+        right: 10px;
+    }
+
+
 }

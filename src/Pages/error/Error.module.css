@@ -18,6 +18,7 @@
 .Message {
     font-weight: 500;
     margin: -30px 0 30px 0;
+    text-align: center;
 }
 
 .NavLink {
@@ -25,4 +26,29 @@
     font-weight: 500;
     color: var(--primary-color);
     text-decoration-line: underline;
+}
+
+@media screen and (max-width: 798px) {
+    .Code {
+        font-size: 200px;
+    }
+
+}
+
+@media screen and (max-width: 492px) {
+    .Error {
+        width: 95%;
+    }
+    .Code {
+        font-size: 100px;
+    }
+
+    .Message{
+        width:70%;
+    }
+
+    .NavLink {
+        width: 100%;
+        text-align: center;
+    }
 }

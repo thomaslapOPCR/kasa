@@ -14,7 +14,7 @@
     background: #F6F6F6;
     height: 100%;
     padding: 56px 50px 56px 50px;
-    border-radius: 20px;
+    border-radius: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -45,6 +45,7 @@
 @media only screen and (max-width: 1060px) {
     /* Réduire le nombre de colonnes à 1 sur les écrans très petits */
     .Container {
+        background: #fff;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
