@@ -1,6 +1,6 @@
 import React from "react";
 import logements from "../../data/logement.json";
-import { useParams  } from "react-router-dom";
+import { useParams, Navigate} from "react-router-dom";
 import Carousel from "../../components/Carousel/Carousel.jsx";
 import Tag from "../../components/Tag/Tag.jsx";
 import Host from "../../components/Host/Host.jsx";
@@ -16,7 +16,7 @@ function RentalDetails() {
   const logementData = logements.filter(logement=> logement.id === logementId.id)[0];
   
   if (logementData === undefined) {
-    location.href = "/error"
+    return <Navigate to="/error" replace={true} />
   }
 
   document.title = logementData.title;
