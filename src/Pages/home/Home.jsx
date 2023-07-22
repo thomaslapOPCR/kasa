@@ -15,9 +15,9 @@ function Home() {
         title="Chez vous, partout et ailleurs"
       />
       <div className={style.Container}>
-        {   data.map(({id,title,cover},index) => (
+        {   data.map(({id,title,cover}) => (
           <Card
-            key={index}
+            key={id}
             id={id}
             title={title}
             cover={cover}
